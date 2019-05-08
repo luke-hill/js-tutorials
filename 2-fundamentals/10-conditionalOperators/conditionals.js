@@ -1,23 +1,24 @@
 if ("0") {
-  alert( 'Hello' );
+  console.log( 'Hello' );
 } // Doesn't show
 
-let officialName = prompt("What is the 'official' name of JavaScript?", '');
+// Fake - Prompt - "What is the 'official' name of JavaScript?"
+let officialName = "ECMAScript";
 
 if (officialName != null && officialName == "ECMAScript") {
-  alert('Right!');
+  console.log('Right!');
 } else {
-  alert("Didn't know? ECMAScript!")
+  console.log("Didn't know? ECMAScript!")
 }
 
-let inputNumber = prompt("What's your favourite number", '');
+let inputNumber = 6
 
 if (inputNumber > 0) {
-  alert(1);
+  console.log("Positive Number");
 } else if (inputNumber < 0) {
-  alert(-1);
+  console.log("Negative Number");
 } else {
-  alert(0);
+  console.log("Zero");
 }
 
 // Rewrite the below statement as a ternary
@@ -29,8 +30,7 @@ if (inputNumber > 0) {
 let a = 2;
 let b = 1.2;
 let result = (a + b < 4) ? "Below" : "Over";
-alert(result);
-
+console.log(result);
 
 let message;
 let login = "";
@@ -51,4 +51,4 @@ message =
   (login == 'Director') ? "Greetings" :
   (login == '') ? "No login" : "";
 
-alert(message);
+console.log(message);
