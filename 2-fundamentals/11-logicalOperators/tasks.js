@@ -39,7 +39,13 @@ if(age < 14 || age > 90) {
 
 // Which of these logs are going to execute?
 
-if (-1 || 0) console.log( 'first' ); // 'first'
-if (-1 && 0) console.log( 'second' ); // This doesn't execute
-if (null || -1 && 1) console.log( 'third' ); // 'third'
+if (-1 || 0) { // 'first'
+  console.log('first');
+}
 
+if (-1 && 0) { // This doesn't execute
+  console.log('second');
+}
+if (null || -1 && 1) { // 'third'
+  console.log('third');
+}
