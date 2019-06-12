@@ -2,11 +2,10 @@
 // Let’s formulate the key differences between Function Declarations and Expressions.
 //
 //   First, the syntax: how to differentiate between them in the code.
-//
 //   Function Declaration: a function, declared as a separate statement, in the main code flow.
 //
 // // Function Declaration
-//   function sum(a, b) {
+// function sum(a, b) {
 //   return a + b;
 // }
 // Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” =:
@@ -18,19 +17,13 @@
 // The more subtle difference is when a function is created by the JavaScript engine.
 //
 //   A Function Expression is created when the execution reaches it and is usable from then on.
-//
 //   Once the execution flow passes to the right side of the assignment let sum = function… – here we go, the function is created and can be used (assigned, called, etc. ) from now on.
-//
-//   Function Declarations are different.
-//
-//   A Function Declaration is usable in the whole script (or a code block, if it’s inside a block).
+//   Function Declarations are different. A Function Declaration is usable in the whole script (or a code block, if it’s inside a block).
 //
 // In other words, when JavaScript prepares to run the script or a code block, it first looks for Function Declarations in it and creates the functions. We can think of it as an “initialization stage”.
-//
 // And after all of the Function Declarations are processed, the execution goes on.
 //
 //   As a result, a function declared as a Function Declaration can be called earlier than it is defined.
-//
 //   For example, this works:
 //
 //   sayHi("John"); // Hello, John
@@ -52,10 +45,8 @@
 // When a Function Declaration is made within a code block, it is visible everywhere inside that block. But not outside of it.
 //
 //   Sometimes that’s handy to declare a local function only needed in that block alone. But that feature may also cause problems.
-//
-//   For instance, let’s imagine that we need to declare a function welcome() depending on the age variable that we get during runtime. And then we plan to use it some time later.
-//
-//   The code below doesn’t work:
+//   For instance, let’s imagine that we need to declare a function welcome() depending on the age variable that we get during runtime.
+//   And then we plan to use it some time later. The code below doesn’t work:
 //
 //   let age = prompt("What is your age?", 18);
 //
@@ -80,7 +71,7 @@
 // if (age < 18) {
 //   welcome();               // \   (runs)
 //   function welcome() {     //  |
-//     console.log("Hello!");       //  |  Function Declaration is available
+//     console.log("Hello!"); //  |  Function Declaration is available
 //   }                        //  |  everywhere in the block where it's declared
 //   welcome();               // /   (runs)
 // } else {

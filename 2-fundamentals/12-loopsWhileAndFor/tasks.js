@@ -76,20 +76,20 @@ while(input < 100) {
 // P.S. The code should work for any n, not be hard-tuned for any fixed value.
 
 // Which number we're testing up to
-let maxPrimeTest = 1000000;
+let maxPrimeTest = 100;
 
 console.log(`Testing prime numbers from 2 -> ${maxPrimeTest}`);
 for (let i = 2; i <= maxPrimeTest; i++) { // i represents an integer we are testing for primality
-  let isPrime = true; // // Assume all numbers are prime until proven otherwise / Reset check for next number
-  for (let j = 2; j < i ** 0.5; j++) { // j represents a potential factor we are testing (We only need to test up to root i)
-    if (i % j == 0) {
-      isPrime = false;
-    }
-
-    if (!isPrime) break; // Optimisation: We know once one check fails it is not prime
-  }
-
-  if (isPrime) {
+  if (isPrime(i)) {
     console.log(`${i} is a prime number`);
   }
+}
+
+function isPrime(n) {
+  for (let j = 2; j < n ** 0.5; j++) { // j represents a potential factor we are testing (We only need to test up to root i)
+    if (n % j == 0) {
+      return false;
+    }
+  }
+  return true;
 }

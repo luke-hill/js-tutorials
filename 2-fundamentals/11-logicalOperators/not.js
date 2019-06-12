@@ -8,4 +8,3 @@ console.log( !!null ); // false
 // There’s a little more verbose way to do the same thing as above – a built-in Boolean function:
 console.log( Boolean("non-empty string") ); // true
 console.log( Boolean(null) ); // false
-

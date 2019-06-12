@@ -78,7 +78,7 @@ function pow(a, b) {
 let ans;
 function longWindedPow(a, b) {
   if(b == 0) {
-    return   console.log(1);
+    return console.log(1);
   }
 
   ans = a;

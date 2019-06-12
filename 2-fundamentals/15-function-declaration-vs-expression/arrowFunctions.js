@@ -24,9 +24,9 @@
 // console.log( sum(1, 2) ); // 3
 // If we have only one argument, then parentheses can be omitted, making that even shorter:
 //
-// // same as
-// // let double = function(n) { return n * 2 }
-//   let double = n => n * 2;
+// same as ...
+// let double = function(n) { return n * 2 }
+// let double = n => n * 2;
 //
 // console.log( double(3) ); // 6
 // If there are no arguments, parentheses should be empty (but they should be present):
@@ -36,7 +36,7 @@
 // sayHi(); // ok now - Returns "Hello!"
 // Arrow functions can be used in the same way as Function Expressions.
 //
-//   For instance, here’s the rewritten example with welcome():
+// For instance, here’s the rewritten example with welcome():
 //
 // let age = prompt("What is your age?", 18);
 //

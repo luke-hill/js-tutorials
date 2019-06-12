@@ -17,12 +17,8 @@ ask(
   function() { console.log("You canceled the execution."); }
 );
 
-let askArrow = (question) => {
-  if (confirm(question)) agree();
-  else cancel();
-};
-
-let agree = () => console.log("You agreed.");
-let cancel = () => console.log("You canceled the execution.");
-
-askArrow("Do you agree?");
+ask(
+  "Do you agree?",
+  () => console.log("You agreed."),
+  () => console.log("You canceled the execution.")
+);

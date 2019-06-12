@@ -32,7 +32,6 @@ showMovie(); // Do you have permission from your parents?
 showMovie(12); // Do you have permission from your parents?
 showMovie(19); // Showing you the movie
 
-
 // A function with an empty return or without it returns undefined
 // If a function does not return a value, it is the same as if it returns undefined:
 // An empty return is also the same as return undefined:

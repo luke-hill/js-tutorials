@@ -11,7 +11,7 @@ if (officialName != null && officialName == "ECMAScript") {
   console.log("Didn't know? ECMAScript!")
 }
 
-let inputNumber = 6
+let inputNumber = 6;
 
 if (inputNumber > 0) {
   console.log("Positive Number");
@@ -52,3 +52,13 @@ message =
   (login == '') ? "No login" : "";
 
 console.log(message);
+
+let obj = { "": "no login", "Employee": "Luke", "Director": "Vlad" };
+console.log(`Return: ${obj["test"] || "this won't get fired"}`);
+console.log(obj["test"] === undefined);
+
+a = null;
+b = null;
+
+console.log( a == b );
+console.log( a === b );

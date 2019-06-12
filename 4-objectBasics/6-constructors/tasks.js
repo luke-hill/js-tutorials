@@ -44,7 +44,7 @@ console.log( "Mul=" + calculator.mul() );
 
 function Accumulator(startingValue) {
   this.value = startingValue;
-  console.log(`Starting value ${startingValue}`)
+  console.log(`Starting value ${startingValue}`);
 
   this.read = function() {
     this.newValue = Math.random();
