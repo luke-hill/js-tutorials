@@ -19,6 +19,7 @@ function impossibleTriangle(a, b, c) {
 function allSame(a, b, c) {
   return a == b && b == c;
 }
+
 function allDifferent(a, b, c) {
   return a != b && a != c && b != c;
 }

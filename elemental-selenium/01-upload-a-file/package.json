@@ -1,0 +1,11 @@
+{
+  "name": "Upload-a-file",
+  "version": "1.0.0",
+  "description": "A project to showcase uploading a file using official WebdriverJs",
+  "dependencies": {
+    "jest": "^22.4.4",
+    "selenium-webdriver":"^3.6.0"
+  },
+  "author": "Manoj Kumar",
+  "license": "MIT"
+}
