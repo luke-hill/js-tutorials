@@ -6,6 +6,16 @@
     "jest": "^22.4.4",
     "selenium-webdriver":"^3.6.0"
   },
+  "scripts": {
+    "test": "jest",
+    "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testEnvironment": "node"
+  },
   "author": "Manoj Kumar",
   "license": "MIT"
 }
