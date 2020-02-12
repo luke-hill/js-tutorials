@@ -4,11 +4,11 @@
   "private": true,
   "license": "UNLICENSED",
   "author": {
-    "name": "Savedo gmbh - tech team",
-    "email": "it@savedo.de",
-    "url": "http://www.savedo.de"
+    "name": "Luke Hill",
+    "email": "lukehill_uk@hotmail.com",
+    "url": "http://www.github.com/luke-hill"
   },
-  "repository": "git@github.com:Savedo/products-table-react.git",
+  "repository": "git@github.com:luke-hill/js-tutorials.git",
   "scripts": {
     "test": "jest",
     "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
@@ -20,7 +20,7 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "jest": "^22.4.4"
+    "jest": "^23.6"
   },
   "dependencies": {}
 }
