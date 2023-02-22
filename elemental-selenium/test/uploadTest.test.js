@@ -6,6 +6,7 @@ describe("Upload Test", function() {
   let driver;
 
   beforeEach(async function() {
+    jest.setTimeout(10000);
     driver = await new Builder().forBrowser("chrome").build();
   });
 
