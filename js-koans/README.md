@@ -13,6 +13,13 @@ $ nvm use lts/gallium
 $ yarn install
 ```
 
+## Running a test
+
+```shell
+# cd into a koan directory
+$ yarn test
+```
+
 ## Creating new koan
 - Make new directory with name of koan
 - Copy over gitignore, package.json, README.md
