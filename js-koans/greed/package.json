@@ -20,7 +20,7 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "jest": "^23.6"
+    "jest": "^25.5.4"
   },
   "dependencies": {}
 }
