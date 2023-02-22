@@ -10,7 +10,7 @@
   },
   "repository": "git@github.com:luke-hill/js-tutorials.git",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "jest": {
     "moduleFileExtensions": [
