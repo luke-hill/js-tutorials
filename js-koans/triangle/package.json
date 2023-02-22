@@ -1,17 +1,16 @@
 {
   "name": "js-koans",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "license": "UNLICENSED",
   "author": {
     "name": "Luke Hill",
     "email": "lukehill_uk@hotmail.com",
-    "url": "http://www.github.com/luke-hill"
+    "url": "https://www.github.com/luke-hill"
   },
   "repository": "git@github.com:luke-hill/js-tutorials.git",
   "scripts": {
-    "test": "jest",
-    "test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
+    "test": "jest"
   },
   "jest": {
     "moduleFileExtensions": [
