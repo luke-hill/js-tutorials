@@ -4,7 +4,7 @@
   "description": "A project to showcase uploading a file using official WebdriverJs",
   "dependencies": {
     "jest": "^27.5.1",
-    "selenium-webdriver":"^3.6.0"
+    "selenium-webdriver": "^4.9"
   },
   "scripts": {
     "test": "jest"
